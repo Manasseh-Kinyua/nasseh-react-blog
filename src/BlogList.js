@@ -1,10 +1,10 @@
 import React from 'react'
 
-const BlogList = (props) => {
-    const blogs = props.blogs
+const BlogList = ({blogs, title}) => {
 
   return (
     <div className='blog-list'>
+        <h3>{title}</h3>
       {blogs.map((blog) => (
             <div className="blog-preview" key={blog.id}>
                 <h2>{ blog.title }</h2>

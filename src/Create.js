@@ -22,6 +22,7 @@ const Create = () => {
         })
         .then(() => {
             setIsPending(false);
+            navigate('/');
         })
     }
 
